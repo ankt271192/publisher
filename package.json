@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ankt271192/publisher/issues"
   },
-  "homepage": "https://github.com/ankt271192/publisher#readme"
+  "homepage": "https://github.com/ankt271192/publisher#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
 }
