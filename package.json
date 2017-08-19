@@ -1,0 +1,19 @@
+{
+  "name": "publisher",
+  "version": "1.0.0",
+  "description": "Serves landing page for a publisher",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankt271192/publisher.git"
+  },
+  "author": "ankt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ankt271192/publisher/issues"
+  },
+  "homepage": "https://github.com/ankt271192/publisher#readme"
+}
