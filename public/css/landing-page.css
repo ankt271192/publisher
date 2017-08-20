@@ -1,8 +1,16 @@
+/* Common Styles */
 
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 body {
   font-family: 'Lato', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container--max-width {
+  max-width: 1172px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Header Styles */
@@ -11,6 +19,7 @@ header {
   padding: 15px 15px 20px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
   font-size: 0;
+  background-color: #ffffff;
 }
 
 .header-menu {
@@ -258,6 +267,202 @@ footer {
   .carousel-control {
     width: 70px;
     top: 43%;
+  }
+
+}
+
+/* Recent Stories */
+
+#recent-stories {
+  padding: 30px 15px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+#recent-stories .title {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 34px;
+  border-bottom: solid 4px #2f73e4;
+  margin-bottom: 24px;
+}
+
+#recent-stories .story {
+  margin-bottom: 30px;
+  max-width: 826px;
+}
+
+#recent-stories .story-image {
+  float: left;
+  width: 45%;
+  height: 127px;
+  background-image: url('//quintype-01.imgix.net/quintype-demo/2015-11/21006f30-9d7e-4219-ba96-4b2fd945e53c/cuba14.jpg');
+  background-size: cover;
+}
+
+#recent-stories .story-details {
+  float: left;
+  width: 55%;
+  padding-left: 10px;
+}
+
+#recent-stories .story-section {
+  display: inline-block;
+  font-size: 11px;
+  line-height: 13px;
+  padding-bottom: 2.3px;
+  margin-bottom: 7.7px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: solid 2.4px #60bcf2;
+}
+
+#recent-stories .story-section.underline-pink {
+  border-color: #f260a4;
+}
+
+#recent-stories .story-title {
+  margin-bottom: 11px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #222222;
+}
+
+#recent-stories .story-author {
+  font-size: 12px;
+  line-height: 15px;
+  color: #818181;
+  margin-bottom: 1px;
+}
+
+#recent-stories .story-posted {
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 12px;
+  color: #3d3d3d;
+}
+
+.loader {
+  font-size: 0;
+  text-align: center;
+}
+
+.loader .circle {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #2f73e4;
+}
+
+.loader .circle + .circle {
+  margin-left: 15px;
+}
+
+@media (min-width: 768px) {
+
+  #recent-stories {
+    padding: 43px 20px 20px;
+  }
+
+  #recent-stories .title {
+    font-size: 26px;
+    line-height: 32px;
+    padding-bottom: 2px;
+    margin-bottom: 18px;
+  }
+
+  #recent-stories .story {
+    margin-bottom: 37px;
+  }
+
+  #recent-stories .story-image {
+    height: 246px;
+  }
+
+  #recent-stories .story-details {
+    padding-left: 27px;
+  }
+
+  #recent-stories .story-section {
+    font-size: 12px;
+    line-height: 15px;
+    border-width: 2.6px;
+    letter-spacing: 1.1px;
+    padding-bottom: 1.8px;
+    margin-bottom: 12.2px;
+  }
+
+  #recent-stories .story-title {
+    margin-bottom: 32px;
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  #recent-stories .story-author {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 4px;
+  }
+
+  #recent-stories .story-posted {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  #recent-stories {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  #recent-stories .title {
+    font-size: 26px;
+    line-height: 41px;
+    padding-bottom: 7px;
+    margin-bottom: 20px;
+  }
+
+  #recent-stories .story {
+    margin-bottom: 42px;
+  }
+
+  #recent-stories .story-image {
+    height: 279px;
+  }
+
+  #recent-stories .story-details {
+    padding-left: 31px;
+  }
+
+  #recent-stories .story-section {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1.3px;
+    border-width: 3px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+
+  #recent-stories .story-title {
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  #recent-stories .story-author {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  #recent-stories .story-posted {
+    font-size: 14px;
+    line-height: 17px;
   }
 
 }
