@@ -57,7 +57,7 @@ header {
 
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
 
   header {
     padding: 30px 40px;
@@ -114,7 +114,7 @@ footer {
 
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
 
   footer {
     padding: 40px 134px 37px 138px;
@@ -223,7 +223,7 @@ footer {
 
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
 
   #must-reads::after {
     top: 38px;
