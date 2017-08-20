@@ -69,3 +69,55 @@ header {
   }
 
 }
+
+/* Footer Styles */
+
+footer {
+  padding: 40px 30px 29px;
+  background-color: #212121;
+}
+
+.footer-logo {
+  margin-top: 6.5px;
+}
+
+.footer-right {
+  font-size: 17px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer-nav {
+  background-color: transparent;
+  padding: 0;
+}
+
+.footer-nav > li > a {
+  color: #ffffff;
+}
+
+.footer-nav > li + li::before {
+  color: inherit;
+  content: "|";
+}
+
+@media (min-width: 768px) {
+
+  footer {
+    padding: 51px 20px 36px 30px;
+  }
+
+  .footer-right {
+    float: right;
+    text-align: right;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  footer {
+    padding: 40px 134px 37px 138px;
+  }
+
+}
