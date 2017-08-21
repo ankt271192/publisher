@@ -13,6 +13,50 @@ body {
   margin-right: auto;
 }
 
+.section-title {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 34px;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  margin-bottom: 24px;
+}
+
+.read-more {
+  float: right;
+  font-size: 24px;
+  margin-top: 30px;
+  line-height: 29px;
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+
+  .section-title {
+    font-size: 26px;
+    line-height: 32px;
+    padding-bottom: 2px;
+    margin-bottom: 18px;
+  }
+
+  .read-more {
+    display: none;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  .section-title {
+    font-size: 34px;
+    line-height: 41px;
+    padding-bottom: 7px;
+    margin-bottom: 20px;
+  }
+
+}
+
 /* Header Styles */
 
 header {
@@ -75,58 +119,6 @@ header {
   .header-title {
     font-size: 32px;
     margin-left: 25px;
-  }
-
-}
-
-/* Footer Styles */
-
-footer {
-  padding: 40px 30px 29px;
-  background-color: #212121;
-}
-
-.footer-logo {
-  margin-top: 6.5px;
-}
-
-.footer-right {
-  font-size: 17px;
-  color: #ffffff;
-  text-align: center;
-}
-
-.footer-nav {
-  background-color: transparent;
-  padding: 0;
-}
-
-.footer-nav > li > a {
-  color: #ffffff;
-}
-
-.footer-nav > li + li::before {
-  color: inherit;
-  content: "|";
-}
-
-@media (min-width: 768px) {
-
-  footer {
-    padding: 51px 20px 36px 30px;
-  }
-
-  .footer-right {
-    float: right;
-    text-align: right;
-  }
-
-}
-
-@media (min-width: 992px) {
-
-  footer {
-    padding: 40px 134px 37px 138px;
   }
 
 }
@@ -230,6 +222,11 @@ footer {
     letter-spacing: 1.6px;
   }
 
+  .carousel-control {
+    margin-left: 13px;
+    margin-right: 13px;
+  }
+
 }
 
 @media (min-width: 992px) {
@@ -267,6 +264,254 @@ footer {
   .carousel-control {
     width: 70px;
     top: 43%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+}
+
+/* Food & Health */
+
+#health-section {
+  padding: 25px 15px;
+}
+
+#health-section .section-title-wrapper {
+  float: left;
+  width: 100%;
+}
+
+#health-section .section-title {
+  border-bottom-color: #f260a4;
+}
+
+#health-section .left-container {
+  float: left;
+  width: 100%;
+}
+
+#health-section .right-container {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#health-section .story-card {
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.1);
+}
+
+#health-section .story-card + .story-card {
+  margin-top: 20px;
+}
+
+#health-section .story-card .story-image {
+  float: left;
+  width: 47%;
+  height: 127px;
+  background-image: url('//quintype-01.imgix.net/quintype-demo/2015-11/21006f30-9d7e-4219-ba96-4b2fd945e53c/cuba14.jpg');
+  background-size: cover;
+}
+
+#health-section .story-card .story-details {
+  float: left;
+  width: 53%;
+  padding: 10px 12px;
+}
+
+#health-section .story-card .story-title {
+  font-size: 14px;
+  color: #222222;
+  line-height: 1.5;
+}
+
+#health-section .story-card .story-author {
+  position: absolute;
+  bottom: 10px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #818181;
+}
+
+#health-section .story-card-big {
+  background-color: #ffffff;
+  box-shadow: 0 2px 11px 0 rgba(0, 0, 0, 0.1);
+}
+
+#health-section .story-card-big .story-image {
+  height: 225px;
+  background-image: url('//quintype-01.imgix.net/quintype-demo/2015-11/21006f30-9d7e-4219-ba96-4b2fd945e53c/cuba14.jpg');
+  background-size: cover;
+}
+
+#health-section .story-card-big .story-details {
+  padding: 20px 19px 17px;
+}
+
+#health-section .story-card-big .story-title {
+  font-size: 26px;
+  line-height: 1.31;
+  color: #222222;
+}
+
+#health-section .story-card-big .story-info {
+  margin-top: 11px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #5c5c5c;
+}
+
+#health-section .story-card-big .story-author {
+  margin-top: 21px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #818181;
+}
+
+@media (min-width: 768px) {
+
+  #health-section {
+    padding: 30px 20px;
+  }
+
+  #health-section .left-container {
+    width: 50%;
+    padding-right: 8.5px;
+  }
+
+  #health-section .right-container {
+    width: 50%;
+    margin-top: 0;
+    padding-left: 8.5px;
+  }
+
+  #health-section .story-card {
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  #health-section .story-card + .story-card {
+    margin-top: 18px;
+  }
+
+  #health-section .story-card .story-image {
+    height: 113px;
+  }
+
+  #health-section .story-card .story-details {
+    padding: 8px 10px;
+  }
+
+  #health-section .story-card .story-title {
+    line-height: 1.29;
+  }
+
+  #health-section .story-card .story-author {
+    bottom: 8px;
+  }
+
+  #health-section .story-card-big {
+    min-height: 375px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  #health-section .story-card-big .story-image {
+    height: 200px;
+  }
+
+  #health-section .story-card-big .story-details {
+    padding: 12px 16px 8px;
+  }
+
+  #health-section .story-card-big .story-title {
+    font-size: 18px;
+    line-height: 1.44;
+  }
+
+  #health-section .story-card-big .story-info {
+    margin-top: 9px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  #health-section .story-card-big .story-author {
+    margin-top: 23px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  #health-section {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  #health-section .left-container {
+    padding-right: 13.5px;
+  }
+
+  #health-section .right-container {
+    padding-left: 13.5px;
+  }
+
+  #health-section .story-card {
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  #health-section .story-card + .story-card {
+    margin-top: 30px;
+  }
+
+  #health-section .story-card .story-image {
+    height: 181px;
+  }
+
+  #health-section .story-card .story-details {
+    padding: 14px 16px;
+  }
+
+  #health-section .story-card .story-title {
+    font-size: 22px;
+    line-height: 1.36;
+  }
+
+  #health-section .story-card .story-author {
+    bottom: 14px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  #health-section .story-card-big {
+    min-height: 603px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  #health-section .story-card-big .story-image {
+    height: 321px;
+  }
+
+  #health-section .story-card-big .story-details {
+    padding: 20px 27px 17px;
+  }
+
+  #health-section .story-card-big .story-title {
+    font-size: 30px;
+    line-height: 1.4;
+  }
+
+  #health-section .story-card-big .story-info {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.56;
+  }
+
+  #health-section .story-card-big .story-author {
+    margin-top: 43px;
+    font-size: 16px;
+    line-height: 19px;
   }
 
 }
@@ -279,13 +524,8 @@ footer {
   background-color: #ffffff;
 }
 
-#recent-stories .title {
-  display: inline-block;
-  font-size: 28px;
-  font-weight: bold;
-  line-height: 34px;
-  border-bottom: solid 4px #2f73e4;
-  margin-bottom: 24px;
+#recent-stories .section-title {
+  border-bottom-color: #2f73e4;
 }
 
 #recent-stories .story {
@@ -367,13 +607,6 @@ footer {
     padding: 43px 20px 20px;
   }
 
-  #recent-stories .title {
-    font-size: 26px;
-    line-height: 32px;
-    padding-bottom: 2px;
-    margin-bottom: 18px;
-  }
-
   #recent-stories .story {
     margin-bottom: 37px;
   }
@@ -421,13 +654,6 @@ footer {
     padding-bottom: 50px;
   }
 
-  #recent-stories .title {
-    font-size: 26px;
-    line-height: 41px;
-    padding-bottom: 7px;
-    margin-bottom: 20px;
-  }
-
   #recent-stories .story {
     margin-bottom: 42px;
   }
@@ -463,6 +689,58 @@ footer {
   #recent-stories .story-posted {
     font-size: 14px;
     line-height: 17px;
+  }
+
+}
+
+/* Footer Styles */
+
+footer {
+  padding: 40px 30px 29px;
+  background-color: #212121;
+}
+
+.footer-logo {
+  margin-top: 6.5px;
+}
+
+.footer-right {
+  font-size: 17px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer-nav {
+  background-color: transparent;
+  padding: 0;
+}
+
+.footer-nav > li > a {
+  color: #ffffff;
+}
+
+.footer-nav > li + li::before {
+  color: inherit;
+  content: "|";
+}
+
+@media (min-width: 768px) {
+
+  footer {
+    padding: 51px 20px 36px 30px;
+  }
+
+  .footer-right {
+    float: right;
+    text-align: right;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  footer {
+    padding: 40px 134px 37px 138px;
   }
 
 }
