@@ -13,6 +13,11 @@ body {
   margin-right: auto;
 }
 
+.section-title-wrapper {
+  float: left;
+  width: 100%;
+}
+
 .section-title {
   display: inline-block;
   font-size: 28px;
@@ -20,7 +25,7 @@ body {
   line-height: 34px;
   border-bottom-width: 4px;
   border-bottom-style: solid;
-  margin-bottom: 24px;
+  margin-bottom: 15px;
 }
 
 .read-more {
@@ -37,7 +42,7 @@ body {
     font-size: 26px;
     line-height: 32px;
     padding-bottom: 2px;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
   }
 
   .read-more {
@@ -52,7 +57,7 @@ body {
     font-size: 34px;
     line-height: 41px;
     padding-bottom: 7px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
 }
@@ -270,15 +275,323 @@ header {
 
 }
 
+/* Politics */
+
+#politics-section {
+  padding: 30px 15px 0;
+}
+
+#politics-section .section-title {
+  border-bottom-color: #6093f2;
+}
+
+#politics-section .left-container {
+  float: left;
+  width: 100%;
+}
+
+#politics-section .middle-container {
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+}
+
+#politics-section .right-container {
+  float: left;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 30px;
+}
+
+#politics-section .story-div {
+  height: 511px;
+  padding-left: 5%;
+  padding-right: 5%;
+  position: relative;
+  background-image: url('//quintype-01.imgix.net/quintype-demo/2015-11/21006f30-9d7e-4219-ba96-4b2fd945e53c/cuba14.jpg');
+  background-size: cover;
+  color: #ffffff;
+}
+
+#politics-section .story-div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#politics-section .story-div .story-text {
+  position: absolute;
+  width: 90%;
+  bottom: 19px;
+}
+
+#politics-section .story-div .story-text .title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.36;
+  margin-bottom: 21px;
+}
+
+#politics-section .story-div .story-text .author {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+#politics-section .story-card {
+  background-color: #ffffff;
+  box-shadow: 0 2px 11px 0 rgba(0, 0, 0, 0.1);
+}
+
+#politics-section .story-card + .story-card {
+  margin-top: 31px;
+}
+
+#politics-section .story-card .story-image {
+  height: 225px;
+  background-image: url('//quintype-01.imgix.net/quintype-demo/2015-11/21006f30-9d7e-4219-ba96-4b2fd945e53c/cuba14.jpg');
+  background-size: cover;
+}
+
+#politics-section .story-card .story-details {
+  padding: 19px;
+}
+
+#politics-section .story-card .story-title {
+  font-size: 26px;
+  line-height: 1.31;
+  color: #222222;
+}
+
+#politics-section .story-card .story-author {
+  margin-top: 21px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #818181;
+}
+
+#politics-section .story-slides {
+  float: left;
+  width: 100%;
+  padding-bottom: 12px;
+  border-bottom: solid 1px #d8d8d8;
+}
+
+#politics-section .story-slides:last-child {
+  border-bottom: none;
+}
+
+#politics-section .story-slides + .story-slides {
+  margin-top: 20px;
+}
+
+#politics-section .story-slides .title {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.45;
+  color: #222222;
+}
+
+#politics-section .story-slides .author {
+  margin-top: 14px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #818181;
+}
+
+@media (min-width: 768px) {
+
+  #politics-section {
+    padding: 31px 20px 0;
+  }
+
+  #politics-section .left-container {
+    width: 48%;
+  }
+
+  #politics-section .middle-container {
+    width: 48%;
+    margin-left: 4%;
+    margin-top: 0;
+  }
+
+  #politics-section .right-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #politics-section .story-div {
+    height: 577px;
+  }
+
+  #politics-section .story-div .story-text {
+    bottom: 16px;
+  }
+
+  #politics-section .story-div .story-text .title {
+    font-size: 32px;
+    line-height: 1.13;
+    margin-bottom: 30px;
+  }
+
+  #politics-section .story-div .story-text .author {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  #politics-section .story-card + .story-card {
+    margin-top: 22px;
+  }
+
+  #politics-section .story-card .story-image {
+    height: 200px;
+  }
+
+  #politics-section .story-card .story-details {
+    padding: 15px 16px 16px;
+  }
+
+  #politics-section .story-card .story-title {
+    font-size: 22px;
+    line-height: 1.36;
+  }
+
+  #politics-section .story-card .story-author {
+    margin-top: 31px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  #politics-section .story-slides {
+    width: 48%;
+  }
+
+  #politics-section .story-slides:nth-last-child(2) {
+    border-bottom: none;
+  }
+
+  #politics-section .story-slides:nth-child(even) {
+    margin-left: 4%;
+  }
+
+  #politics-section .story-slides + .story-slides {
+    margin-top: 15px;
+  }
+
+  #politics-section .story-slides:nth-child(2) {
+    margin-top: 0;
+  }
+
+  #politics-section .story-slides .title {
+    font-size: 18px;
+    line-height: 1.44;
+  }
+
+  #politics-section .story-slides .author {
+    margin-top: 16px;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  #politics-section {
+    padding-top: 39px;
+  }
+
+  #politics-section .left-container {
+    width: 30%;
+  }
+
+  #politics-section .middle-container {
+    width: 30%;
+    margin-left: 5%;
+  }
+
+  #politics-section .right-container {
+    width: 30%;
+    margin-left: 5%;
+    margin-top: 0;
+  }
+
+  #politics-section .story-div {
+    height: 610px;
+  }
+
+  #politics-section .story-div .story-text {
+    bottom: 22px;
+  }
+
+  #politics-section .story-div .story-text .title {
+    font-size: 34px;
+    line-height: 1.18;
+    margin-bottom: 20px;
+  }
+
+  #politics-section .story-div .story-text .author {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  #politics-section .story-card + .story-card {
+    margin-top: 23px;
+  }
+
+  #politics-section .story-card .story-image {
+    height: 208px;
+  }
+
+  #politics-section .story-card .story-details {
+    padding: 17px 17px 22px;
+  }
+
+  #politics-section .story-card .story-title {
+    font-size: 24px;
+    line-height: 1.42;
+  }
+
+  #politics-section .story-card .story-author {
+    margin-top: 19px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  #politics-section .story-slides {
+    width: 100%;
+    padding-bottom: 17px;
+  }
+
+  #politics-section .story-slides:nth-last-child(2) {
+    border-bottom: solid 1px #d8d8d8;
+  }
+
+  #politics-section .story-slides:nth-child(even) {
+    margin-left: 0;
+  }
+
+  #politics-section .story-slides + .story-slides {
+    margin-top: 19px;
+  }
+
+  #politics-section .story-slides .title {
+    font-size: 22px;
+    line-height: 1.45;
+  }
+
+  #politics-section .story-slides .author {
+    margin-top: 10px;
+  }
+
+}
+
 /* Food & Health */
 
 #health-section {
   padding: 25px 15px;
-}
-
-#health-section .section-title-wrapper {
-  float: left;
-  width: 100%;
 }
 
 #health-section .section-title {
