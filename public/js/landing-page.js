@@ -39,12 +39,16 @@ var landing = (function() {
 
   function renderRecent(data) {
     var loader = $('#loader')
-    var source = $('#page-template').html()
+    var source = $('#recent-story-template').html()
 
-    var context = getContextData(data.stories)
+    data.stories.forEach(function(x) {
+      x['posted'] = convertToTimePassed(Date.now() - x['published-at'])
+      x['storySection'] = x['sections'][0]['name']
+      x['sectionClass'] = x['sections'][0]['slug']
+    })
 
     var template = Handlebars.compile(source)
-    loader.before(template(context))
+    loader.before(template(data))
     offset = offset + data.stories.length
   }
 
